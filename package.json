@@ -1,0 +1,22 @@
+{
+  "name": "bioscope-x402",
+  "version": "1.0.0",
+  "description": "A digital Bioscope: pay-per-frame film reels served over HTTP 402 using the x402 protocol.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "watch": "node src/client.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "dependencies": {
+    "@x402/core": "^2.0.0",
+    "@x402/evm": "^2.0.0",
+    "@x402/express": "^2.0.0",
+    "@x402/fetch": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "viem": "^2.21.0"
+  }
+}
